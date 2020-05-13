@@ -4,6 +4,7 @@ service: calendar
 provider:
   name: aws
   timeout: 30
+  memorySize: 256
 functions:
   index:
     handler: functions-build/calendar.calendar
