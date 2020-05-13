@@ -1,0 +1,14 @@
+{
+  "name": "tv-shows",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "netlify-lambda build /functions -c ./webpack.config.js",
+    "start": "netlify-lambda serve /functions -c ./webpack.config.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3"
+  }
+}
