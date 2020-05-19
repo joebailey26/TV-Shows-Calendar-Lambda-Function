@@ -259,9 +259,7 @@ module.exports.calendar = (event, context, callback) => {
                         date = new Date(episode.air_date)
                         date.setDate(date.getDate() + 1)
                         date = new Date(date.getFullYear(), date.getMonth(), date.getDate())
-                        if (date > new Date()) {
-                            cal.addEvent(response.tvShow.name + ' | ' + episode.name, '', '', date, date)
-                        }
+                        cal.addEvent(response.tvShow.name + ' | ' + episode.name, '', '', date, date)
                     }
                 }
                 return
